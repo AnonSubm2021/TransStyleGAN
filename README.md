@@ -1,1 +1,2 @@
-# TransStyleGAN
+# Transforming the Latent Space of StyleGAN for Real Face Editing
+coming soon...
