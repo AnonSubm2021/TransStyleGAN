@@ -4,7 +4,7 @@ Anonymous Author(s)
 > Despite recent advances in semantic manipulation using StyleGAN, semantic editing of real faces remains challenging. The gap between the W space and the W+ space demands an undesirable trade-off between reconstruction quality and editing quality. To solve this problem, we propose to expand the latent space by replacing fully-connected layers in the StyleGAN's mapping network with attention-based transformers. This simple and effective technique integrates the aforementioned two spaces and transforms them into one new latent space called W++. Our modified StyleGAN maintains the state-of-the-art generation quality of the original StyleGAN with moderately better diversity. But more importantly, the proposed W++ space achieves superior performance in both reconstruction quality and editing quality. Despite these significant advantages, our W++ space supports existing inversion algorithms and editing methods with only negligible modifications thanks to its structural similarity with the W/W+ space. Extensive experiments on the FFHQ dataset prove that our proposed W++ space is evidently more preferable than the previous W/W+ space for real face editing.
 
 <p align="center">
-<img src="docs/overview.png" width="800px"/>
+<img src="docs/overview.png" style="background-color: white;" width="800px"/>
 <br>
 (a) Model overview. While the original StyleGAN feeds the same style code to each convolution layer, we redesign the architecture of the StyleGAN mapping network using Transformer so that different style codes are provided to different layers. We illustrate the structure for resolution at 256x256. 
 <br>
@@ -23,7 +23,7 @@ Anonymous Author(s)
 ### Real Face Inversion
 
 <p align="center">
-<img src="docs/inversion.png" width="800px"/>
+<img src="docs/inversion.png" style="background-color: white;" width="800px"/>
 <br>
 (a) Qualitative comparison on image reconstruction with StyleGAN projector in different latent spaces. 
 <br>
@@ -51,7 +51,7 @@ Top row displays differences between inverted images and original images.
 #### 1. InterfaceGAN
 
 <p align="center">
-<img src="docs/interfaceGAN.png" width="800px"/>
+<img src="docs/interfaceGAN.png" style="background-color: white;" width="800px"/>
 <br>
 Manipulating real faces with respect to the attribute age in different latent spaces. Given a real image to edit,  we first invert it back to the latent space using StyleGAN projector and then manipulate the latent code with InterFaceGAN. Our results (highlighted by the red box) achieve considerably stronger robustness for long-distance manipulation.
 </p>
@@ -59,50 +59,50 @@ Manipulating real faces with respect to the attribute age in different latent sp
 ##### The intermediate frames of the entire Age Transformation and Gender Transitioning
 
 <p align="center">
-<img src="docs/aging.png" width="800px"/>
+<img src="docs/aging.png" style="background-color: white;" width="800px"/>
 <br>
 The age label for each image is created using the pre-trained DEX model. ~N denotes ``approximately N years old''. 
 </p>
 
 <p align="center">
-<img src="docs/transitioning.png" width="800px"/>
+<img src="docs/transitioning.png" style="background-color: white;" width="800px"/>
 <br>
 </p>
 
 ##### More results on Age Transformation
 
 <p align="center">
-<img src="docs/aging2.png" width="800px"/>
+<img src="docs/aging2.png" style="background-color: white;" width="800px"/>
 <br>
 </p>
 
 <p align="center">
-<img src="docs/aging3.png" width="800px"/>
+<img src="docs/aging3.png" style="background-color: white;" width="800px"/>
 <br>
 </p>
 
 ##### More results on Gender Transitioning
 
 <p align="center">
-<img src="docs/transitioning2.png" width="800px"/>
+<img src="docs/transitioning2.png" style="background-color: white;" width="800px"/>
 <br>
 </p>
 
 <p align="center">
-<img src="docs/transitioning3.png" width="800px"/>
+<img src="docs/transitioning3.png" style="background-color: white;" width="800px"/>
 <br>
 </p>
 
 #### 2. conditional GAN
 
 <p align="center">
-<img src="docs/cGAN.png" width="800px"/>
+<img src="docs/cGAN.png" style="background-color: white;" width="800px"/>
 <br>
 Our conditional GAN-based framework for editing real images. Here we cast one person's facial expression(<i>eyes open and mouth closed</i>) to another person.
 </p>
 
 <p align="center">
-<img src="docs/smile.png" width="800px"/>
+<img src="docs/smile.png" style="background-color: white;" width="800px"/>
 <br>
 Manipulating real faces with respect to the attribute smile in different latent spaces. Given a real image to edit,  we first invert it back to the latent space using StyleGAN projector and then manipulate the latent code with our proposed cGAN-based editing pipeline. Our results (highlighted by the red box) exhibit the most apparent and natural smile expression.
 </p>
@@ -110,12 +110,12 @@ Manipulating real faces with respect to the attribute smile in different latent 
 ##### More results on Smile
 
 <p align="center">
-<img src="docs/smile2.png" width="800px"/>
+<img src="docs/smile2.png" style="background-color: white;" width="800px"/>
 <br>
 </p>
 
 <p align="center">
-<img src="docs/smile3.png" width="800px"/>
+<img src="docs/smile3.png" style="background-color: white;" width="800px"/>
 <br>
 </p>
 
